@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+  font-family: Merriweather, sans-serif;
+  background-color: #eff0f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 550px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  &__photo-cart {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+
+    &__skeleton {
+      width: 270px;
+      height: 270px;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      width: 90%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
